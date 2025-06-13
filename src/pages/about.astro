@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css'
 
 const pageTitle = "About Me";
@@ -27,13 +29,11 @@ const textCase = "uppercase"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>{pageTitle}</h1>
     <style define:vars={{skillColor, fontWeight, textCase}}>
       h1 {
-        color: purple;
+        color: rgb(122, 71, 122);
         font-size: 4rem;
       }
       .skill {
@@ -64,6 +64,10 @@ const textCase = "uppercase"
     {happy && <p>I am happy to learn astro!</p>}
     {finished && <p>I finished this tutorial!</p>}
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days</p>}
-
+		
+    <Footer />
+    <script>
+			import "../scripts/menu.js"
+		</script>
   </body>
 </html>
