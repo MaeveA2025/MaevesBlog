@@ -1,5 +1,5 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #f1f0ec;
     font-family: sans-serif;
 }
   
@@ -30,14 +30,14 @@ h1 {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #A9A9A9;
+    background-color: #9e7967;
   }
 
 .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #C0C0C0;
+    background-color: #9e7967;
     display: none;
     margin: 0;
 }
