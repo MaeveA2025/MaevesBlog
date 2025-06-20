@@ -1,20 +1,17 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { platform, icon, username } = Astro.props;
+const { platform, username } = Astro.props;
 ---
 <a href={`https://www.${platform}.com/${username}`}>
-    <Icon size="2.5rem" name={`${icon}`} />
+    <Icon size="2.5rem" name={`${platform}`} />
 </a>
 
 <style>
     a {
         padding: 0.5rem 1rem;
         color: #f1f0ec;
-        background-color: #9e7967;
+        background-color: #b4895e;
         text-decoration: none;
-    }
-    [data-icon="logo"] {
-        color: #9e7967;
     }
 </style>

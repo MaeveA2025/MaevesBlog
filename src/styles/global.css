@@ -1,6 +1,6 @@
 html {
-    background-color: #f1f0ec;
-    font-family: sans-serif;
+    background-color: #FEFAE0;
+    font-family: Merriweather, serif;
 }
   
 body {
@@ -15,6 +15,10 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
 h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
@@ -23,44 +27,44 @@ h1 {
 .hamburger {
     padding-right: 20px;
     cursor: pointer;
-  }
+}
   
-  .hamburger .line {
+.hamburger .line {
     display: block;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #9e7967;
-  }
+    background-color: #333333;
+}
 
 .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #9e7967;
     display: none;
     margin: 0;
 }
   
 .nav-links a {
+    color: #333333;
     display: block;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
   
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #C0C0C0;
+    background-color: #b4895e;
 }
   
 .expanded {
     display: unset;
 }
-  
+
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
@@ -73,6 +77,10 @@ h1 {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none; /*  Hide on larger screens */
   }
 }
 
