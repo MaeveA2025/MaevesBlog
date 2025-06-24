@@ -48,12 +48,10 @@ h1 {
 .nav-links a {
     color: #333333;
     display: block;
-    text-align: center;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: lowercase;
 }
   
 .nav-links a:hover,
@@ -67,7 +65,7 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    text-align: left;
     display: block;
     position: static;
     width: auto;
