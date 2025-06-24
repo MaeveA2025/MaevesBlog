@@ -1,14 +1,19 @@
 html {
-    background-color: #FEFAE0;
+    background-color: #BFC99F;
     font-family: Merriweather, serif;
 }
   
 body {
+    background-color: #FEFAE0;
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
-    padding: 1rem;
+    padding: 15px 20px;
     line-height: 1.5;
+}
+
+main {
+    padding: 15px 20px;
 }
 
 * {
@@ -48,10 +53,10 @@ h1 {
 .nav-links a {
     color: #333333;
     display: block;
-    padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
+
 }
   
 .nav-links a:hover,
@@ -75,6 +80,7 @@ h1 {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+    margin: 5px;
   }
 
   .hamburger {
