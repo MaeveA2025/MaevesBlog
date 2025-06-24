@@ -6,12 +6,12 @@ const pageTitle = "About Me";
 
 const identity = {
   firstName: "Maeve",
-  country: "USA",
+  country: "US",
   occupation: "graduated student",
   hobbies: ["gaming", "hiking", "traveling"],
 }
 
-const skills = ["HTML", "CSS", "Python", "JS", "Astro", "React"]
+const skills = ["Java", "C#", "Python", "JS", "Astro", "React", "DevOps", "Agile"]
 const skillColor = "#7f9670"
 const textCase = "uppercase"
 ---
@@ -25,22 +25,21 @@ const textCase = "uppercase"
       color: #4c613f;
     }
   </style>
-  <h2>Maeve and my new Astro site!</h2>
+  <h2>Who is Maeve?</h2>
 
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <p>I am a 22 year old who recently graduated college! I have a wide range of hobbies I talk about here on my blog you can see</p>
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <p>Some of my favorite game genre's are roguelikes, FPS, card games and RPGs</p>
+  <p>My current favorites are Balatro, Counter-Strike 2 & Poker (Texas Hold'em).</p>
   <p>Here are a few facts about me:</p>
 
   <ul>
-    <li>My name is {identity.firstName}</li>
-    <li>I am from {identity.country} and I am currently a {identity.occupation}</li>
-    {identity.hobbies.length >= 2 &&
-      <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    }
+    <li>I am from the {identity.country}</li>
+    <li>I am currently seeking new opportunities in the field of software development :D</li>
   </ul>
-  <p>My skills are:</p>
+  <p>My skills and methodologies I have worked with:</p>
   <ul>
     {skills.map((skill) => <li class="skill">{skill}</li>)}
   </ul>
+  <p>Using the resume link you can find all of my experiences from the last four years!</p>
 </BaseLayout>
